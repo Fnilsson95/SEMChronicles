@@ -1,6 +1,6 @@
 # SEMChronicles
 
-![SEMChronicles logo](public/assets/images/sem_logo.png)
+![SEMChronicles logo](src/assets/images/sem_logo.png)
 
 ### Project Description:
 
