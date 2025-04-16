@@ -7,14 +7,12 @@ import Resources from "../pages/Resources";
 
 export default function AppRoutes() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/reflections" element={<Reflections />} />
-        <Route path="/resources" element={<Resources />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/courses" element={<Courses />} />
+      <Route path="/reflections" element={<Reflections />} />
+      <Route path="/resources" element={<Resources />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
