@@ -29,3 +29,5 @@ const yearOneCourses = [
     image: reqImg,
   },
 ];
+
+export default yearOneCourses;
