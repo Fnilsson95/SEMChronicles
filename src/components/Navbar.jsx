@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <h1 className="logo">SEMChronicles</h1>
@@ -10,9 +12,31 @@ const Navbar = () => {
         <li>
           <Link to="/">Home</Link>
         </li>
-        <li>
-          <Link to="/courses">Courses</Link>
+        {/* Dropdown menu for Courses section */}
+        <li
+          className="dropdown"
+          onMouseEnter={() => setDropdownOpen(true)}
+          onMouseLeave={() => setDropdownOpen(false)}
+        >
+          <span className="dropdown-title">Courses</span>
+          {dropdownOpen && (
+            <ul className="dropdown-menu">
+              <li>
+                {" "}
+                <Link to="/courses/year1">Year 1</Link>
+              </li>
+              <li>
+                {" "}
+                <Link to="/courses/year2">Year 2</Link>
+              </li>
+              <li>
+                {" "}
+                <Link to="/courses/year3">Year 3</Link>
+              </li>
+            </ul>
+          )}
         </li>
+
         <li>
           <Link to="/resources">Resources</Link>
         </li>
