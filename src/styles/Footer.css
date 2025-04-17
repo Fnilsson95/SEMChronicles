@@ -1,7 +1,8 @@
+/* Footer container */
 .footer {
-  background-color: #282c34;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+  background-color: #2f4f4f; /* Dark footer background */
+  color: white; /* Text Color */
+  text-align: center; /* Center-align the text */
+  padding: 1rem; /* Space around the content */
+  font-size: 0.9rem; /* Text size */
 }

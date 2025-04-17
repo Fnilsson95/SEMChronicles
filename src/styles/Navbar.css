@@ -1,23 +1,31 @@
+/* Navbar container styles */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #282c34;
-  padding: 1rem 2rem;
-  color: white;
+  display: flex; /* Flexbox layout: items side-by-side  */
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center; /* Vertically center items */
+  background-color: #2f4f4f; /* Background color */
+  padding: 1rem 2rem; /* Top/Bottom padding: 1 rem - Left/right: 2 rem*/
+  color: white; /* Text Color */
 }
+/* rem stands for "root em" which is a relative unit. 1rem equals the font size
+ of the root element and is consistent even when nested */
 
+/* Navigation link list */
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+  list-style: none; /* Remove bullets from list */
+  display: flex; /* Display list items side-by-side */
+  gap: 1.5rem; /* Space between each nav-link */
 }
 
+/* Navigation Links */
+/* .nav-links a is a CSS selector detail and it selects all <a> (anchor/link) 
+that are inside an element with the class nav-links */
 .nav-links a {
-  color: white;
-  text-decoration: none;
+  color: white; /* White text for links */
+  text-decoration: none; /* Remove underline from links */
 }
 
+/* Hover effect for links */
 .nav-links a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Underline links on hover */
 }

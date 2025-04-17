@@ -1,11 +1,16 @@
+/* App-layout: makes the page stretch to fukll height */
 .app-layout {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack children components vertically */
+  min-height: 100vh; /* Minimum height of the viewport (full page) */
 }
+/* 100vh = 100% Viewport Height
+   Basically says "Take up the full screen height" 
+   Which also pushes footer to the absolute bottom */
 
+/* Main content area: fills up the remaining vertical space */
 .main-content {
-  flex-grow: 1;
-  padding: 2rem;
-  background-color: #f9f9f9;
+  flex-grow: 1; /* This makes the content take all available space */
+  padding: 2rem; /* Space inside the main area */
+  background-color: #e0f7e9; /* Light brackground for contrast */
 }
