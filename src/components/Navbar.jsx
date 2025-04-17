@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
+  // useState to manage whether the dropdown menu is open or not
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (

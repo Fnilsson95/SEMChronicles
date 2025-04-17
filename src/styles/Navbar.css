@@ -29,3 +29,48 @@ that are inside an element with the class nav-links */
 .nav-links a:hover {
   text-decoration: underline; /* Underline links on hover */
 }
+
+/* Position the dropdown parent relative so the menu can
+ be positioned absolutely inside it */
+.dropdown {
+  position: relative; /* Makes this element a reference for absolut children */
+}
+
+/* Title/trigger of the dropdown - behaves like a button */
+.dropdown-title {
+  color: white;
+  cursor: pointer; /* Makes it look clickable */
+  padding: 0.5rem 0.75rem; /* Top/Bottom: 0.5rem - Left/Right: 0.75rem */
+}
+
+/* Dropdown menu container - Hidden by default and is shown with JS */
+.dropdown-menu {
+  position: absolute; /* Position relative to .dropdown */
+  top: 100%; /* Position below the trigger */
+  left: 0;
+  background-color: white;
+  color: black;
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  padding: 0.5rem 0; /* Vertical padding for menu list */
+  min-width: 150px; /* Minimum width of dropdown */
+  z-index: 1000; /* Keep on top of other elements */
+}
+
+/* Items inside dropdown */
+.dropdown-menu li {
+  list-style: none; /* Remove list bullets */
+}
+
+/* Links inside dropdown menu */
+.dropdown-menu li a {
+  display: block; /* Full-width clickable area */
+  padding: 0.5rem 1rem; /* Padding for spacing */
+  color: black;
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect on dropdown links */
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
