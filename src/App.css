@@ -14,3 +14,13 @@
   padding: 2rem; /* Space inside the main area */
   background-color: #e0f7e9; /* Light brackground for contrast */
 }
+
+.year-page {
+  padding: 2rem;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
