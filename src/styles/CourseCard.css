@@ -1,33 +1,52 @@
 .course-card {
-  display: block;
-  background-color: rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.08); /* translucent background */
+  border: 3px solid var(--color); /* blue border like ProjectBox */
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 25px 50px;
+  transition: 0.5s;
   text-decoration: none;
-  color: #333;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: inherit; /* inherits the global #e7e7e7 */
 }
 
 .course-card:hover {
-  transform: translate(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+  background-color: rgb(27, 39, 125); /* same hover as .projectBox */
 }
 
 .card-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
 }
 
 .card-text {
-  padding: 1rem;
+  padding: 0;
 }
 
 .card-text h3 {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--text-light, #e7e7e7);
   margin-bottom: 0.5rem;
 }
 
 .card-text p {
   font-size: 0.9rem;
-  color: #666;
+  color: #cccccc;
 }

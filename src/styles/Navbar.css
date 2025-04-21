@@ -3,7 +3,6 @@
   display: flex; /* Flexbox layout: items side-by-side  */
   justify-content: space-between; /* Space between logo and links */
   align-items: center; /* Vertically center items */
-  background-color: transparent; /* Background color */
   padding: 1rem 2rem; /* Top/Bottom padding: 1 rem - Left/right: 2 rem*/
   color: white; /* Text Color */
 }
