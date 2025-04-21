@@ -1,4 +1,5 @@
 import Typer from "../components/IntroductionPage";
+import "../styles/HomePage.css";
 
 export default function Home() {
   return (

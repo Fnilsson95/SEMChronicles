@@ -1,0 +1,13 @@
+/* Introduction Loader */
+.loader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0f7e9;
+}
+
+.TypeEffect {
+  font-weight: 500;
+  font-size: 24px;
+}

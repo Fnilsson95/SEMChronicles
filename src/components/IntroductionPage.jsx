@@ -2,6 +2,7 @@ import React from "react";
 /* React wrapper for typewrite-style text animation */
 /* Provides an animated typing functionality */
 import Typewriter from "typewriter-effect";
+import "../styles/IntroductionPage.css";
 
 const Typer = () => {
   return (

@@ -1,0 +1,32 @@
+.HomePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 40px;
+}
+
+@media (max-width: 900px) {
+  .HomePage {
+    display: block;
+    text-align: center;
+    margin-top: 150px;
+    padding: 25px;
+  }
+  .HomeText {
+    text-align: left;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 500px) {
+  .HomePage {
+    min-height: 70vh;
+  }
+  .HomeText h1 {
+    font-weight: 500;
+    font-size: 28px;
+  }
+}
