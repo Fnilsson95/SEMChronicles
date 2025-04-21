@@ -1,11 +1,17 @@
+import Typer from "../components/IntroductionPage";
+
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to SEMChronicles</h1>
-      <p>
-        My journey through the Software Engineering and Management program at
-        Gothenburg University
-      </p>
+      <div className="HomePage">
+        <div className="HomeText">
+          <h1>Hello there!</h1>
+          <h1>
+            I'm <b> Fredrik Nilsson </b>
+          </h1>
+          <Typer />
+        </div>
+      </div>
     </div>
   );
 }

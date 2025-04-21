@@ -8,7 +8,7 @@ const Typer = () => {
     <div className="TypeEffect">
       <Typewriter
         options={{
-          string: [
+          strings: [
             /* Array of strings to type one by one */
             "Software Engineering Student",
             "University of Gothenburg",
