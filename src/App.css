@@ -12,7 +12,7 @@
 .main-content {
   flex-grow: 1; /* This makes the content take all available space */
   padding: 2rem; /* Space inside the main area */
-  background-color: #e0f7e9; /* Light brackground for contrast */
+  background-color: transparent; /* Light brackground for contrast */
 }
 
 .year-page {
