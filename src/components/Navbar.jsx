@@ -39,10 +39,10 @@ const Navbar = () => {
         </li>
 
         <li>
-          <Link to="/resources">Resources</Link>
+          <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <Link to="/reflections">Reflections</Link>
+          <Link to="/resources">Resources</Link>
         </li>
       </ul>
     </nav>

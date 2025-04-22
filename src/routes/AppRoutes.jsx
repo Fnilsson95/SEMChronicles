@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import yearOneCourses from "../utils/yearOneCourses";
+import projects from "../utils/projects";
 import Home from "../pages/Home";
 import Courses from "../pages/Courses";
 import NotFound from "../pages/NotFound";
-import Reflections from "../pages/Reflections";
+import Projects from "../pages/Projects";
 import Resources from "../pages/Resources";
 import Year1 from "../pages/Year1";
 import Year2 from "../pages/Year2";
@@ -24,7 +25,10 @@ export default function AppRoutes() {
       ))}
       <Route path="/courses/year2" element={<Year2 />} />
       <Route path="/courses/year3" element={<Year3 />} />
-      <Route path="/reflections" element={<Reflections />} />
+      <Route path="/projects" element={<Projects />} />
+      {projects.map((p) => (
+        <Route key={p.id} path={p.path} element={<p.component />} />
+      ))}
       <Route path="/resources" element={<Resources />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

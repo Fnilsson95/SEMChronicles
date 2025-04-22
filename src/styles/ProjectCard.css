@@ -1,0 +1,71 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 3px solid var(--color);
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 25px 50px;
+  transition: 0.5s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  background-color: rgb(27, 39, 125);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-image {
+  display: block;
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.card-text h3 {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--text-light, #e7e7e7);
+  margin-bottom: 0.5rem;
+}
+
+/* ── NEW: button row + exact ProjectBox styling ───────── */
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projectbtn {
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+  margin: 25px 3% 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--color);
+  color: #e7e7e7;
+  height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: all ease-in-out 0.3s;
+}
+
+.projectbtn:hover {
+  color: var(--color);
+  background-color: #e7e7e7;
+}
