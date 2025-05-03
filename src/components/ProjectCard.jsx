@@ -4,26 +4,20 @@ import { FaGithub } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 import "../styles/ProjectCard.css";
 
-/**
- * ProjectCard - Same as CourseCard but with optional
- * Github / Website buttons/link
- *
- *
- * Props:
- * - title  - string - display name
- * - to     - string - internal route for <Link>
- * - image  - string - thumbnail src
- * - github - string - external repo URL
- */
-
 const ProjectCard = ({ title, to, image, github, website }) => {
   return (
-    <Link to={to} className="project-card">
+    <div className="project-card">
       <div className="card-content">
-        {image && <img src={image} alt={title} className="card-image" />}
+        {image && (
+          <Link to={to}>
+            <img src={image} alt={title} className="card-image" />
+          </Link>
+        )}
 
         <div className="card-text">
-          <h3>{title}</h3>
+          <Link to={to} className="card-title-link">
+            <h3>{title}</h3>
+          </Link>
 
           {(github || website) && (
             <div className="project-links">
@@ -32,6 +26,7 @@ const ProjectCard = ({ title, to, image, github, website }) => {
                   href={github}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="projectbtn"
                   title="GitHub repository"
                 >
                   <FaGithub size={22} />
@@ -42,6 +37,7 @@ const ProjectCard = ({ title, to, image, github, website }) => {
                   href={website}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="projectbtn"
                   title="Live site"
                 >
                   <CgFileDocument size={22} />
@@ -51,7 +47,7 @@ const ProjectCard = ({ title, to, image, github, website }) => {
           )}
         </div>
       </div>
-    </Link>
+    </div>
   );
 };
 
