@@ -3,6 +3,7 @@ import BabyBuddy from "../pages/projectDetails/BabyBuddy";
 import SmileSelect from "../pages/projectDetails/SmileSelect";
 import SaunaBuddy from "../pages/projectDetails/SaunaBuddy";
 import Embedded from "../pages/projectDetails/Embedded";
+import Payroll from "../pages/projectDetails/PayrollSystem";
 
 /**
  * Array of project metadata – same shape as yearOneCourses.
@@ -44,6 +45,13 @@ const projects = [
     image: require("../assets/images/courses/dit033_datamanagement.jpg.webp"),
     github: "https://github.com/Fnilsson95/Embedded-Course",
     website: "https://github.com/Fnilsson95/Embedded-Course",
+  },
+  {
+    id: 5,
+    title: "Payroll System",
+    path: "/projects/payroll",
+    component: Payroll,
+    image: require("../assets/images/courses/dit033_datamanagement.jpg.webp"),
   },
 ];
 
