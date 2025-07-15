@@ -1,11 +1,11 @@
-import DIT043 from "../pages/courseDetails/dit043_oop";
-import DIT023 from "../pages/courseDetails/dit023_math";
-import DIT094 from "../pages/courseDetails/dit094_team";
-import DIT046 from "../pages/courseDetails/dit046_req";
-import DIT182 from "../pages/courseDetails/dit182_struc";
-import DIT033 from "../pages/courseDetails/dit033_data";
-import DIT185 from "../pages/courseDetails/dit185_soft";
-import DIT113 from "../pages/courseDetails/dit113_system";
+import DIT043 from "../pages/courseOneDetails/dit043_oop";
+import DIT023 from "../pages/courseOneDetails/dit023_math";
+import DIT094 from "../pages/courseOneDetails/dit094_team";
+import DIT046 from "../pages/courseOneDetails/dit046_req";
+import DIT182 from "../pages/courseOneDetails/dit182_struc";
+import DIT033 from "../pages/courseOneDetails/dit033_data";
+import DIT185 from "../pages/courseOneDetails/dit185_soft";
+import DIT113 from "../pages/courseOneDetails/dit113_system";
 
 const yearOneCourses = [
   {
