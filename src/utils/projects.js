@@ -17,7 +17,6 @@ const projects = [
     component: BabyBuddy,
     image: require("../assets/images/courses/dit033_datamanagement.jpg.webp"),
     github: "https://github.com/Fnilsson95/SaunaBuddy",
-    website: "https://github.com/Fnilsson95/SaunaBuddy",
   },
   {
     id: 2,
@@ -26,7 +25,6 @@ const projects = [
     component: SmileSelect,
     image: require("../assets/images/courses/dit033_datamanagement.jpg.webp"),
     github: "https://github.com/Fnilsson95/SmileSelect",
-    website: "https://github.com/Fnilsson95/SmileSelect",
   },
   {
     id: 3,
@@ -35,7 +33,6 @@ const projects = [
     component: SaunaBuddy,
     image: require("../assets/images/courses/dit033_datamanagement.jpg.webp"),
     github: "https://github.com/Fnilsson95/BabyBuddy",
-    website: "https://github.com/Fnilsson95/BabyBuddy",
   },
   {
     id: 4,
@@ -44,7 +41,6 @@ const projects = [
     component: Embedded,
     image: require("../assets/images/courses/dit033_datamanagement.jpg.webp"),
     github: "https://github.com/Fnilsson95/Embedded-Course",
-    website: "https://github.com/Fnilsson95/Embedded-Course",
   },
   {
     id: 5,
@@ -52,6 +48,7 @@ const projects = [
     path: "/projects/payroll",
     component: Payroll,
     image: require("../assets/images/courses/dit033_datamanagement.jpg.webp"),
+    github: "https://github.com/Fnilsson95/Payroll",
   },
 ];
 
