@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import yearOneCourses from "../utils/yearOneCourses";
+import yearTwoCourses from "../utils/yearTwoCourses";
 import projects from "../utils/projects";
 import Home from "../pages/Home";
 import Courses from "../pages/Courses";
@@ -24,6 +25,13 @@ export default function AppRoutes() {
         />
       ))}
       <Route path="/courses/year2" element={<Year2 />} />
+      {yearTwoCourses.map((course) => (
+        <Route
+          key={course.id}
+          path={course.path}
+          element={<course.component />}
+        />
+      ))}
       <Route path="/courses/year3" element={<Year3 />} />
       <Route path="/projects" element={<Projects />} />
       {projects.map((p) => (
