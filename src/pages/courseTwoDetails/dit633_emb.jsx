@@ -1,4 +1,4 @@
-export default function DIT043() {
+export default function DIT633() {
   return (
     <div className="p-6 space-y-6">
       <h1 className="text-2xl font-bold">
