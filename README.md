@@ -1,4 +1,4 @@
-# SEMChronicles (Paused for now - Building summer project)
+# SEMChronicles
 
 ![SEMChronicles logo](src/assets/images/sem_logo.png)
 
