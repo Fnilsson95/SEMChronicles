@@ -3,7 +3,7 @@
 ![SEMChronicles showcase logo](src/assets/images//showcase_image.png)
 ![SEMChronicles showcase logo two](src/assets/images/showcase_image_three.png)
 
-### Project Description: (Currently paused - Pursuing School)
+### Project Description: (Currently paused due to school)
 
 SEMChronicles is a comprehensive online journal and portfolio documenting my journey through the Software Engineering and Management (SEM) program. This project aims to create a detailed repository of all the courses, materials, and projects undertaken throughout my university studies. SEMChronicles will serve as a personal documentation tool, showcasing my academic growth, the skills I acquire, and the various projects I develop. It will include:
 
